@@ -1,0 +1,92 @@
+html, body {
+	height: 100%;
+	font-family: Consolas, monaco, monospace;
+}
+
+.hand {
+	cursor: pointer;
+}
+
+.mv3-5 {
+	margin-top: 1.4rem;
+	margin-bottom: 1.4rem;
+}
+
+.inverted {
+	filter: invert(80%);
+}
+
+.container {
+	min-height: 100%;
+	position: relative;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 3rem;
+}
+
+.temp {
+	height: 28rem;
+	width: 70rem;
+	background-color: red;
+}
+
+#body {
+	padding-bottom: 3rem;
+	margin: auto;
+	width: 75%;
+}
+
+.service {
+	margin: 20px;
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+}
+
+.service:hover > .launch {
+	display: block;
+}
+
+.service p {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	color: black;
+}
+
+.service img {
+	display: block;
+	width: 75%;
+	margin: auto;
+	padding: 0px;
+}
+
+.launch {
+	z-index: 2000;
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-color: rgba(255,255,255, 0);
+	position: fixed;
+	top: 0;
+}
+
+.launch p {
+	font-size: 20px;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	margin-top: 40%;
+	position: fixed;
+	bottom: 0;
+	color: black;
+}
+
+#other {
+	background-color: rgba(0, 0, 0, 0);
+}

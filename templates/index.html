@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% block body %}
+  <h2>RTCat</h2>
+  <div id="filter">
+    <input id="search" placeholder="Name" type="text">
+    <input id="ATNF" class="source_check" type="checkbox"><span class="source_check_text">ATNF</span>
+    <input id="RRATalog" class="source_check" type="checkbox"><span class="source_check_text">RRATalog</span>
+    <input id="Parallaxes" class="source_check" type="checkbox"><span class="source_check_text">Parallaxes</span>
+    <input id="GCpsr" class="source_check" type="checkbox"><span class="source_check_text">GCpsr</span>
+    <input id="frbcat" class="source_check" type="checkbox"><span class="source_check_text">frbcat</span>
+  </div>
+  <table id="table"></table>
+  <div id="nav">
+    <input id="prev" type="button" value="Previous">
+    <span id="pageinfo"></span>
+    <input id="next" type="button" value="Next">
+  </div>
+  <div id="versioning">
+    <span id="ATNF_v" class="version-box">
+      <img src={{ url_for('static', filename='loading.gif') }}>
+      <span>Checking version info for ATNF...</span>
+    </span>
+    <span id="RRATalog_v" class="version-box">
+      <img src={{ url_for('static', filename='loading.gif') }}>
+      <span>Checking version info for RRATalog...</span>
+    </span>
+    <span id="Parallaxes_v" class="version-box">
+      <img src={{ url_for('static', filename='loading.gif') }}>
+      <span>Checking version info for Parallaxes...</span>
+    </span>
+    <span id="GCpsr_v" class="version-box">
+      <img src={{ url_for('static', filename='loading.gif') }}>
+      <span>Checking version info for GCpsr...</span>
+    </span>
+    <span id="frbcat_v" class="version-box">
+      <img src={{ url_for('static', filename='loading.gif') }}>
+      <span>Checking version info for frbcat...</span>
+    </span>
+  </div>
+  <div id="more-info">
+    <h2>Features</h2>
+    <ul>
+      <li>Aggregate data from multiple sources</li>
+      <li>Automatic versioning and regular updating</li>
+      <li>Responsive filtering</li>
+    </ul>
+    <h2>Attributions</h2>
+    <p>All data used in this catalog is aggregate data, compiled from various sources. As such, all data is owned by the original source.</p>
+    <ul>
+      <li>ATNF pulsar database - <a href="http://www.atnf.csiro.au/people/pulsar/psrcat/">http://www.atnf.csiro.au/people/pulsar/psrcat/</a></li>
+      <li>RRATalog - <a href="http://astro.phys.wvu.edu/rratalog/">http://astro.phys.wvu.edu/rratalog/</a></li>
+      <li>Parallaxes database - <a href="http://www.astro.cornell.edu/research/parallax/">http://www.astro.cornell.edu/research/parallax/</a></li>
+      <li>GCpsr catalog - <a href="http://www.naic.edu/~pfreire/GCpsr.html">http://www.naic.edu/~pfreire/GCpsr.html</a></li>
+      <li>frbcat catalog - <a href="http://www.astronomy.swin.edu.au/pulsar/frbcat/">http://www.astronomy.swin.edu.au/pulsar/frbcat/</a></li>
+    </ul>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src={{ url_for('static', filename='main.js') }}></script>
+{% endblock %}

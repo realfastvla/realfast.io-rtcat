@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ page_title }}</title>
+	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
+	<link rel="stylesheet" href={{ url_for('static', filename='custom-style.css') }}/>
+	<link rel="stylesheet" type="text/css" href={{ url_for('static', filename='catalog_style.css') }}>
+	<link rel="stylesheet" type="text/css" href={{ url_for('static', filename="entry_style.css") }}>
+	<link rel="shortcut icon" href={{ url_for('static', filename='favicon.ico') }} type="image/x-icon">
+</head>
+<body>
+	<div class="container">
+		<header>
+		  <nav class="h3 pa2 bg-white code ttu">
+		  	<a class="link fl w2 ma3 dim" href="../index.html" title="Home"><img src={{ url_for('static', filename='realfast_logo.png') }}></a>
+		    <a class="link dark-gray dim fl mh3 mv3-5" href="../about/index.html" title="About">About</a>
+		    <a class="link dark-gray dim fl mh3 mv3-5" href="../software/index.html" title="Software">Software</a>
+		    <a class="link dark-gray dim fl mh3 mv3-5" href="../services/index.html" title="Services">Services</a>
+		    <a class="link dark-gray dim fl mh3 mv3-5" href="../data/index.html" title="Data">Data</a>
+		  </nav>
+		</header>
+
+		<div id="body">
+			{% block body %}{% endblock %}
+		</div>
+
+		<div class="footer code dark-gray pa2">
+			<p class="ma0">realfast funded by NSF, web design by Andrew Halle, logo design by Studio Principle <a href="../thanks/index.html">More</a></p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+#wrapper {
+    min-height: calc(100% - 40px);
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.version-box img {
+    width: 40px;
+}
+
+#cover {
+    border: 1px solid black;
+    background-color: grey;
+}
+
+#cover h1 {
+    display: block;
+    text-align: center;
+}
+
+#cover p {
+    display: block;
+    text-align: center;
+    font-style: italic;
+}
+
+#cover img {
+    width: 100px;
+    margin: 8px;
+    float: left;
+}
+
+#filter {
+    padding: 0px;
+    margin: 2vh 5vw 0px 5vw;
+    width: 90vw;
+}
+
+#filter #search {
+    padding: 0px;
+    margin: 0px 2px 0px 0px;
+    width: 50vw;
+}
+
+#filter .source_check_text {
+    padding: 0px;
+    margin: 0px 3.5vw 0px 0px;
+    font-size: 1.2vw;
+}
+
+#table {
+    border: 1px solid grey;
+    padding: 0px;
+    margin: 2vh 5vw 0px 5vw;
+    width: 90vw;
+    height: 35vh;
+    font-size: 1.8vh;
+    text-align: center;
+    border-spacing: 0px;
+    border-collapse: separate;
+}
+
+#table td {
+    width: 25%;
+    padding: 0px;
+}
+
+.light-grey-row {
+    background-color: #bcc0c6;
+}
+
+.light-blue-row {
+    background-color: #bfd2ef;
+}
+
+#nav {
+    padding: 0px;
+    margin: 2vh 5vw 0px 5vw;
+    width: 90vw;
+}
+
+#prev {
+    padding: 0px;
+    margin: 0px 1vw 0px 37.5vw;
+    width: 5vw;
+}
+
+#next {
+    padding: 0px;
+    margin: 0px 0px 0px 1vw;
+    width: 5vw;
+}
+
+#pageinfo {
+    padding: 0px;
+    margin: 0px;
+    width: 5vw;
+}
+
+#more-info {
+    margin-left: 10px;
+}
+
+#more-info p {
+    text-indent: 10px;
+}
+
+footer {
+    padding: 0px;
+    height: 40px;
+    width: 100%;
+    background-color: grey;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+footer p {
+    position: relative;
+    bottom: 3px;
+    display: block;
+    text-align: center;
+}
